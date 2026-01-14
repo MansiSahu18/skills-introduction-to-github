@@ -53,7 +53,7 @@ function shortenUrl() {
     
     // Generate short code
     const shortCode = generateShortCode();
-    const shortUrl = `${window.location.origin}/s/${shortCode}`;
+    const shortUrl = `${window.location.origin}/#${shortCode}`;
     
     // Save to storage
     saveUrl(shortCode, longUrl, shortUrl);
@@ -92,9 +92,7 @@ function copyToClipboard() {
     navigator.clipboard.writeText(shortUrlInput.value).then(() => {
         showNotification('Copied to clipboard!');
     }).catch(err => {
-        // Fallback for older browsers
-        document.execCommand('copy');
-        showNotification('Copied to clipboard!');
+        showNotification('Failed to copy. Please copy manually.', 'error');
     });
 }
 

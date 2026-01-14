@@ -25,8 +25,8 @@ A simple, elegant URL shortener web application that runs entirely in your brows
 Simply clone this repository and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/MansiSahu18/skills-introduction-to-github.git
-cd skills-introduction-to-github
+git clone https://github.com/yourusername/your-repository.git
+cd your-repository
 # Open index.html in your browser
 ```
 
